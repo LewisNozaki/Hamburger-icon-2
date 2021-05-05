@@ -1,3 +1,5 @@
+/* Default */
+
 *, 
 *:before,
 *:after {
@@ -19,8 +21,11 @@ body {
   background: lightgray;
 }
 
+/* Hamburger Menu Styling */
+
 .container {
   border: 1px solid black;
   width: 300px;
   height: 300px;
+  cursor: pointer;
 }
