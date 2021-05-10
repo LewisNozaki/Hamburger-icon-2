@@ -119,6 +119,27 @@ body {
   }
 }
 
+.reverseMoveTwo {
+  animation: reverse-move-two 1s forwards;
+}
+
+@keyframes reverse-move-two {
+  0% {
+    border-radius: 50%;
+    transform: scaleX(0.08);
+  }
+
+  50% {
+    border-radius: 50%;
+    transform: scaleX(0.08);
+  }
+
+  100% {
+    border-radius: 0;
+    transform: scaleX(1);
+  }
+}
+
 /* Click Animation */
 
 .left-side {

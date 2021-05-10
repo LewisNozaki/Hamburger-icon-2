@@ -18,6 +18,7 @@ container.addEventListener("click", moveLines);
 const createDots = () => {
   one.classList.remove("reverseMoveOne");
   one.classList.add("moveOne");
+  two.classList.remove("reverseMoveTwo");
   two.classList.add("moveTwo");
   three.classList.add("moveThree");
 }
@@ -26,9 +27,10 @@ container.addEventListener("mouseover", createDots);
 
 // Mouse Out
 const reverseMoveLines = () => {
-  console.log("mouse out");
   one.classList.remove("moveOne");
   one.classList.add("reverseMoveOne");
+  two.classList.remove("moveTwo");
+  two.classList.add("reverseMoveTwo");
   
 }
 
