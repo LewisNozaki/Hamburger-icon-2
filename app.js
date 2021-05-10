@@ -20,3 +20,9 @@ const createDots = () => {
 }
 
 container.addEventListener("mouseover", createDots);
+
+const reverseMoveLines = () => {
+  console.log("mouse out");
+}
+
+container.addEventListener("mouseout", reverseMoveLines);
