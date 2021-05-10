@@ -140,6 +140,28 @@ body {
   }
 }
 
+.reverseMoveThree {
+  animation: reverse-move-three 1s forwards;
+}
+
+@keyframes reverse-move-three {
+  0% {
+    border-radius: 50%;
+    transform: scaleX(0.08) translateY(-430%) translateX(500%);
+  }
+
+  50% {
+    border-radius: 50%;
+    transform: scaleX(0.08) translateY(-430%);
+  }
+
+  100% {
+    border-radius: 0;
+    transform: scaleX(1) translateY(0) translateX(0);
+  }
+}
+
+
 /* Click Animation */
 
 .left-side {

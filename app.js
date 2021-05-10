@@ -20,6 +20,7 @@ const createDots = () => {
   one.classList.add("moveOne");
   two.classList.remove("reverseMoveTwo");
   two.classList.add("moveTwo");
+  three.classList.remove("reverseMoveThree");
   three.classList.add("moveThree");
 }
 
@@ -31,6 +32,8 @@ const reverseMoveLines = () => {
   one.classList.add("reverseMoveOne");
   two.classList.remove("moveTwo");
   two.classList.add("reverseMoveTwo");
+  three.classList.remove("moveThree");
+  three.classList.add("reverseMoveThree");
   
 }
 
