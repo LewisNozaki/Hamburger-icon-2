@@ -5,6 +5,7 @@ let one = document.getElementsByClassName("one")[0];
 let two = document.getElementsByClassName("two")[0];
 let three = document.getElementsByClassName("three")[0];
 
+// Click
 const moveLines = () => {
   one.classList.add("left-side");
   two.classList.add("make-big");
@@ -13,7 +14,9 @@ const moveLines = () => {
 
 container.addEventListener("click", moveLines);
 
+// Mouse Over
 const createDots = () => {
+  one.classList.remove("reverseMoveOne");
   one.classList.add("moveOne");
   two.classList.add("moveTwo");
   three.classList.add("moveThree");
@@ -21,8 +24,12 @@ const createDots = () => {
 
 container.addEventListener("mouseover", createDots);
 
+// Mouse Out
 const reverseMoveLines = () => {
   console.log("mouse out");
+  one.classList.remove("moveOne");
+  one.classList.add("reverseMoveOne");
+  
 }
 
 container.addEventListener("mouseout", reverseMoveLines);

@@ -62,7 +62,7 @@ body {
     border-radius: 50%;
     transform: scaleX(0.08) translateY(430%);
   }
-  
+
   100% {
     border-radius: 50%;
     transform: scaleX(0.08) translateY(430%) translateX(-500%);
@@ -97,6 +97,27 @@ body {
 }
 
 /* Hover Aniumation Reverse */
+
+.reverseMoveOne {
+  animation: reverse-move-one 1s forwards;
+}
+
+@keyframes reverse-move-one {
+  0% {
+    border-radius: 50%;
+    transform: scaleX(0.08) translateY(430%) translateX(-500%);
+  }
+
+  50% {
+    border-radius: 50%;
+    transform: scaleX(0.08) translateY(430%);
+  }
+
+  100% {
+    border-radius: 0;
+    transform: scaleX(1) translateY(0) translateX(0);
+  }
+}
 
 /* Click Animation */
 
