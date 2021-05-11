@@ -45,7 +45,7 @@ body {
 .three {
   align-self: center;
   justify-self: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /* Hover Animation */
