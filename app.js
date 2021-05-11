@@ -10,6 +10,10 @@ let isXToggled = false;
 const moveLines = () => {
   if (isXToggled) {
     console.log(isXToggled);
+    one.classList.remove("left-side");
+    one.classList.add("left-side-reverse");
+    two.classList.remove("make-big");
+    two.classList.add("make-big-reverse");
   } else {
     one.classList.add("left-side");
     two.classList.add("make-big");

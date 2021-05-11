@@ -248,44 +248,33 @@ body {
 
 /* Click Animation Reverse*/
 
-.left-side {
-  animation: left-side-animate 1s forwards;
+.left-side-reverse {
+  animation: left-side-animate-reverse 1s forwards;
 }
 
-@keyframes left-side-animate {
+@keyframes left-side-animate-reverse {
   0% {
-    border-radius: 50%;
-    transform: scaleX(0.08) translateY(430%) translateX(-500%);
-  }
-
-  50% {
-    border-radius: 50%;
-    transform: scaleX(0.1) translateY(430%) translateX(0);
-  }
-
-  90% {
-    border-radius: 50%;
-    transform: scaleX(0.2) translateY(430%) translateX(0);
-    background: cornflowerblue;
-  }
-  
-  100% {
     border-radius: 5px;
     transform: scaleX(1) translateY(430%) translateX(0) rotate(45deg);
     z-index: 2;
     width: 150px;
     background: white;
   }
+  
+  100% {
+    border-radius: 50%;
+    transform: scaleX(0.08) translateY(430%) translateX(-500%);
+  }
 }
 
-.make-big {
-  animation: big-circle .5s forwards;
+.make-big-reverse {
+  animation: big-circle-reverse 1s forwards;
 }
 
-@keyframes big-circle {
+@keyframes big-circle-reverse {
   0% {
     border-radius: 50%;
-    transform: scaleX(0.08);
+    transform: scaleX(0.8) scaleY(10);
   }
 
   50% {
@@ -293,15 +282,9 @@ body {
     transform: scaleX(0.08);
   }
 
-  75% {
-    border-radius: 50%;
-    transform: scaleX(0.08);
-  }
-
   100% {
-    border-radius: 50%;
-    transform: scaleX(0.8) scaleY(10);
-    background: cornflowerblue;
+    border-radius: 0%;
+    transform: scaleX(1) scaleY(1);
   }
 }
 
