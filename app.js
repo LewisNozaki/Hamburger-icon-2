@@ -4,12 +4,19 @@ const container = document.getElementsByClassName("container")[0];
 let one = document.getElementsByClassName("one")[0];
 let two = document.getElementsByClassName("two")[0];
 let three = document.getElementsByClassName("three")[0];
+let isXToggled = false;
 
 // Click
 const moveLines = () => {
-  one.classList.add("left-side");
-  two.classList.add("make-big");
-  three.classList.add("right-side");
+  if (isXToggled) {
+    console.log(isXToggled);
+  } else {
+    one.classList.add("left-side");
+    two.classList.add("make-big");
+    three.classList.add("right-side");
+  }
+
+  isXtoggled = !isXToggled;
 };
 
 container.addEventListener("click", moveLines);
