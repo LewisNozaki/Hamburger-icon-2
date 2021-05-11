@@ -47,6 +47,13 @@ const reverseMoveLines = () => {
   two.classList.add("reverseMoveTwo");
   three.classList.remove("moveThree");
   three.classList.add("reverseMoveThree");
+
+  // if (isXToggled) {
+  //   one.classList.remove("moveOne");
+  //   one.classList.remove("reverseMoveOne");
+  //   one.classList.remove("left-side");
+  //   one.classList.remove("left-side-reverse");
+  // }
   
 }
 
