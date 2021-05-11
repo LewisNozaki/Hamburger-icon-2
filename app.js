@@ -15,8 +15,8 @@ const moveLines = () => {
     two.classList.add("make-big");
     three.classList.add("right-side");
   }
-
-  isXtoggled = !isXToggled;
+  
+  isXToggled = !isXToggled;
 };
 
 container.addEventListener("click", moveLines);
