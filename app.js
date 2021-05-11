@@ -14,6 +14,8 @@ const moveLines = () => {
     one.classList.add("left-side-reverse");
     two.classList.remove("make-big");
     two.classList.add("make-big-reverse");
+    three.classList.remove("right-side");
+    three.classList.add("right-side-reverse");
   } else {
     one.classList.add("left-side");
     two.classList.add("make-big");
